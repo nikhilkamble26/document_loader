@@ -3,6 +3,14 @@ import pandas as pd
 
 pdf_path = "hdfc_doc.pdf"
 
+# with pdfplumber.open(pdf_path) as pdf:
+#     print("Total pages:", len(pdf.pages))
+#     page = pdf.pages[6]
+
+#     text = page.extract_text()
+#     print(text)
+
+
 with pdfplumber.open(pdf_path) as pdf:
     print("Total pages:", len(pdf.pages))
     page = pdf.pages[6]
